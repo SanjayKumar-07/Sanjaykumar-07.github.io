@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content=" width=device-width , inital-scale=1.0">
+<link rel="shortcut icon" type="image/png" href="icon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<title> SPIDER 0.3 </title>
+<style type="text/css">
+ @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans|Open+Sans');
+ *{
+  margin:0;
+  padding:0;
+  boz-sizing:border-box;
+}
+body
+{   background: url(download1.jpg) no-repeat center center fixed;
+ -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+ color: #f0f0f0;
+	color: #f5f5f5;
+   font-family: 'Alegreya Sans', sans-serif;
+   margin:0%;
+  
+  justify-content:center;
+  min-height:100vh;
+  align-items:center;
+   }
+ p
+ {display: block;
+ }  
+#main-header 
+{ top: 0px; left: 0px;
+padding: 0px 200px 0px 0px; 
+background-color: transparent; 
+text-align: center;
+
+}
+.para p{
+    margin: 0 auto;
+    padding:20px;
+  font-size:35px;
+   line-height:1.5em;
+  font-family: 'Alegreya Sans', sans-serif, cursive;
+}
+
+.para {
+  padding: 15px;
+  border:2px solid rgb(255, 255, 255);
+  border-radius:5px;
+}
+#para{
+  padding:15px;
+  font-size:21px;
+  font-family: 'Alegreya', sans-serif, cursive;
+  border:2px solid rgb(0, 0, 0);
+  border-radius: 3px;
+}
+#text {
+    margin: 1em 0;
+    padding: 1em 1em 0;
+    background-color: transparent;
+}
+
+#text p {
+    margin: 0;
+    padding-bottom: 1em;
+    user-select:none !important;
+}
+.typing{
+   display: flex;   justify-content:center;
+}
+
+.typing textarea 
+{
+   
+   background-color: #ededed;
+  width:90%;
+}
+.symbolclock {
+text-align:center;
+ font-family: 'Alegreya', sans-serif, cursive;
+}
+
+.stopwatch {
+    font-size: 50px;
+    font-weight: 200px;
+  font-family: 'Alegreya', sans-serif, cursive;
+  margin:15px;
+}
+#outlay {
+    padding:10px;
+    font-size: 10px;
+    font-weight: 200px;
+    color: rgb(0, 0, 0);
+    border: 3px solid rgb(72, 0, 255);
+    margin:10px;
+}
+#main-header h1
+{ font-size: 100px;
+	text-align: center;
+padding-left: 8%;
+font-family: 'Alegreya Sans', sans-serif;
+
+color: #f5f5f5;
+}
+.page-head h1
+{text-align: center ;
+padding-left: 8%;
+font-family: 'Alegreya Sans', sans-serif;
+color: #f5f5f5;
+}
+div{ display: block;}
+.container{
+  width:950px;
+  margin:10%;
+  border-radius: 10px; 
+  border:3px solid rgb(255, 255, 255);
+
+  }
+  .page-head {
+    background-color: transparent;
+    color: white;
+    padding:0px;
+    border: 2px solid rgba(255,255,255);
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 24px;
+	color: #f5f5f5;
+}
+
+ul 
+{
+	list-style-type: none;
+}
+
+footer {
+	clear: both;
+	background-color: transparent;
+	width:100%;
+}
+.social 
+{
+	list-style-type: none;
+	text-align: center;
+
+}
+.social li 
+{
+	display: inline;
+}
+.social i 
+{
+	font-size: 500%;
+	margin:1%;
+	padding:5%;
+	color: #c3d7df;
+}
+.social i:hover {
+	color: #f5f5f5
+}
+.socket 
+{
+	border-top:1px solid #fffefe;
+	background-color: #18121e;
+	max-height: 55px;
+	margin:0;
+}
+.socket p 
+{
+	padding: 5px 0 9px 0;
+	text-align: center;
+}
+
+.correct-green{
+ background-color:#29d45d; 
+  color:white;
+}
+.wrong-red{
+ background-color:#f06966; 
+  color:white;
+}
+</style>
+<body>
+<div id="main-header">
+
+
+
+<h1>Word speed counter</h1>
+<p id="slogan"> </p>
+
+</div>   
+
+<div class="container">
+	<header class="page-head">
+		<h1>TEST YOUR SPEED</h1>  
+	</header>
+
+</div>
+<section class="para">
+		<div id="text">
+<p>Where there is a will, there is a way. If there is a chance in a million that you can do something, anything, to keep what you want from ending, do it. Pry the door open or, if need be, wedge your foot in that door and keep it open.</p>
+		</div>
+		<div class="typing">
+                <textarea id="para" name="textarea" rows="5" placeholder="Enter the above text here!" ></textarea>
+			</div>
+			<div class="symbolclock">
+					<section id="clock">
+						<div class="stopwatch">Timer: 00:00:00</div>
+					</section>
+					<button id="outlay"> Cancel and try again. </button>
+			</div>
+</section>
+
+<footer>
+		<ul class="social">
+	 
+		<li><a href="https://www.facebook.com/The.Name.Is.Sanjay.Kumar" target="_blank"><i class="fa fa-facebook"></i></a></li>
+		<li><a href="https://www.instagram.com/sanjay_sk_11" target="_blank"/><i class="fa fa-instagram"></i></a></li>
+		<li><a href="https://www.linkedin.com/in/sanjay-kumar-881047159/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+		<li><a href="index.html" target="_blank"><i class=" fa fa-home"></i></a></li>	
+		</ul>
+		</footer>
+		<footer class="socket">
+		<p>sanjaykumar30699@gmail.com  <br>     +(91) 8072156338 </p>
+		<script type="text/javascript" src="index.js"></script>
+		</footer>
+</body>
+</html>
